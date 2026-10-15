@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart | WilTec Solutions</title>
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="cart">
+<div id="site-header"></div>
+
+<div class="banner"><div class="container">
+  <h1>Your <span class="grad">Cart</span></h1>
+  <p>Review your items, then send your order to us on WhatsApp to confirm payment and delivery.</p>
+</div></div>
+
+<section>
+  <div class="container cart-wrap">
+    <div class="card">
+      <div id="cartItems"></div>
+      <p style="margin-top:18px"><a class="btn btn-outline btn-sm" href="shop.html">← Continue shopping</a> <button class="btn btn-outline btn-sm" id="clearCart" type="button">Clear cart</button></p>
+    </div>
+
+    <div class="card" id="checkoutCard">
+      <h3>Checkout</h3>
+      <div style="margin:14px 0">
+        <div class="sum-row"><span>Subtotal</span><span id="sub"></span></div>
+        <div class="sum-row total"><span>Total</span><span id="tot"></span></div>
+      </div>
+      <form id="checkoutForm">
+        <div class="field"><label for="name">Full name *</label><input id="name" name="name" required></div>
+        <div class="field"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" required></div>
+        <div class="field"><label for="delivery">Receive order by</label>
+          <select id="delivery" name="delivery"><option>Collect in Mokhotlong</option><option>Delivery</option></select></div>
+        <div class="field" id="addrField" style="display:none"><label for="address">Delivery address</label><input id="address" name="address"></div>
+        <div class="field"><label for="payment">Payment method</label>
+          <select id="payment" name="payment"><option>Cash</option><option>M-Pesa</option><option>EcoCash</option><option>Bank transfer</option></select></div>
+        <div class="field"><label for="notes">Notes (optional)</label><textarea id="notes" name="notes" style="min-height:70px"></textarea></div>
+        <button class="btn btn-wa btn-block" type="submit">Send order on WhatsApp</button>
+        <p class="muted" style="font-size:.8rem;margin-top:10px">We will confirm availability, final price and payment details with you on WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

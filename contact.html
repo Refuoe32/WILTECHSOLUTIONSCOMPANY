@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | WilTec Solutions – Call or WhatsApp +266 5173 3235</title>
+<meta name="description" content="Contact WilTec Solutions in Mokhotlong, Lesotho. Call or WhatsApp +266 5173 3235 for IT support, repairs and a free quote.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<div class="banner"><div class="container">
+  <h1>Get in <span class="grad">Touch</span></h1>
+  <p>We're here to help! Contact us for support, enquiries or a free quote.</p>
+</div></div>
+
+<section id="quote">
+  <div class="container grid g2" style="gap:40px;align-items:start">
+    <div>
+      <div class="info-row"><div><b>Phone / Call</b><a id="cPhone" href="#"></a></div></div>
+      <div class="info-row"><div><b>WhatsApp</b><a id="cWa" href="#" target="_blank" rel="noopener">Chat with us now</a></div></div>
+      <div class="info-row"><div><b>Location</b><span id="cLoc"></span><span>On-site and remote services available</span></div></div>
+      <div class="info-row"><div><b>Business Hours</b><span id="cH1"></span><span id="cH2"></span></div></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+        <a class="btn btn-primary" id="cCall" href="#">Call now</a>
+        <a class="btn btn-wa" id="cWa2" href="#" target="_blank" rel="noopener">WhatsApp now</a>
+      </div>
+      <div class="map"><iframe title="Map of Mokhotlong, Lesotho" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=28.95%2C-29.40%2C29.15%2C-29.20&amp;layer=mapnik"></iframe></div>
+    </div>
+
+    <div class="card">
+      <h3>Send us a message</h3>
+      <p class="muted" style="margin-bottom:18px">Fill in the form and your message opens in WhatsApp, ready to send to us.</p>
+      <form id="contactForm">
+        <div class="two">
+          <div class="field"><label for="name">Full name *</label><input id="name" name="name" required placeholder="Your name"></div>
+          <div class="field"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" required placeholder="+266 …"></div>
+        </div>
+        <div class="field"><label for="subject">Subject *</label><select id="subject" name="subject" required></select></div>
+        <div class="field"><label for="message">Message *</label><textarea id="message" name="message" required placeholder="Your message…"></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const p=$("#cPhone");p.textContent=CONFIG.phoneDisplay+" (WhatsApp available)";p.href="tel:"+CONFIG.phoneTel;
+  const w=waLink("Hello WilTec Solutions, I need help.");
+  $("#cWa").href=w;$("#cWa2").href=w;$("#cCall").href="tel:"+CONFIG.phoneTel;
+  $("#cLoc").textContent=CONFIG.location;$("#cH1").textContent=CONFIG.hours[0];$("#cH2").textContent=CONFIG.hours[1];
+});
+</script>
+</body>
+</html>

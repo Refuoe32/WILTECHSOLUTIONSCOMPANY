@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WilTec Solutions | IT Services, Repairs & Tech Shop – Mokhotlong, Lesotho</title>
+<meta name="description" content="WilTec Solutions: computer repairs, OS installation, networking, data recovery, web development and IT products in Mokhotlong, Lesotho.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Tech Support · IT Services · Digital Solutions</span>
+      <h1>Your Trusted <span class="grad">IT &amp; Tech Solutions</span> Partner</h1>
+      <p class="lead">Professional IT services, computer repairs, network solutions and digital support for individuals, businesses and organisations – backed by a certified engineer and IT specialist.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="services.html">Our Services</a>
+        <a class="btn btn-outline" href="shop.html">Visit the Shop</a>
+        <a class="btn btn-wa" id="heroWa" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="hero-art"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1400&q=85" alt="IT technician working on computer hardware" loading="eager"><div class="hero-image-label"><strong>Professional IT Support</strong><span>Repairs · Networks · Digital Solutions</span></div></div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><div><b>Fast &amp; Reliable</b><span>Quick turnaround service</span></div></div>
+    <div class="stat"><div><b>Certified Engineer</b><span>IT specialist you can trust</span></div></div>
+    <div class="stat"><div><b>Affordable Prices</b><span>Honest, transparent pricing</span></div></div>
+    <div class="stat"><div><b>On-Site &amp; Remote</b><span>We come to you or fix remotely</span></div></div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">What we do</span><h2>Our Core Services</h2><p class="muted">From system setup to network security – we've got you covered.</p></div>
+    <div class="grid g3" id="homeServices"></div>
+    <p style="margin-top:30px"><a class="btn btn-outline" href="services.html">View all services →</a></p>
+  </div>
+</section>
+
+<section style="background:var(--bg2);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head center"><span class="eyebrow">How it works</span><h2>Simple, fast support</h2></div>
+    <div class="grid g3 steps">
+      <div class="card"><h3>Contact us</h3><p>Call or message us on WhatsApp and tell us what the problem is or what you want to buy.</p></div>
+      <div class="card"><h3>We diagnose &amp; quote</h3><p>We assess the issue and give you a clear price before any work begins.</p></div>
+      <div class="card"><h3>Fixed &amp; delivered</h3><p>Your device is repaired, your system set up, or your order delivered – done right.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <div><h2>Need help now?</h2><p>Get in touch with us today for fast and reliable IT support.</p></div>
+      <div class="row"><a class="btn btn-primary" href="contact.html">Contact Us →</a><a class="btn btn-wa" id="ctaWa" href="#" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-outline" id="ctaCall" href="#">Call</a></div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const w=waLink("Hello WilTec Solutions, I need help.");
+  $("#heroWa").href=w;$("#ctaWa").href=w;$("#ctaCall").href="tel:"+CONFIG.phoneTel;
+});
+</script>
+</body>
+</html>
